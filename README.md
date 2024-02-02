@@ -7,4 +7,4 @@
 |1. Wireframes | LOHI |
 |2. wireframes | HIFI |
 
-![knight](http://tinyurl.com/56b94kkp)
+![knight](http://tinyurl.com/cvvpshbk)
