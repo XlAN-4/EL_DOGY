@@ -9,9 +9,9 @@
 <body>
     <main>
         <header class="nav level-1">
-          
+          <a href="/01.UI/Dashboard.html">
             <img src="../01.UI/img/iconback.svg" alt="back">
-            
+          </a>
 
 
             <img src="../01.UI/img/Logo.svg" alt="Logo">
@@ -26,15 +26,107 @@
 
         <section class="Module">
                 <h1>Module Users</h1>
+                        <a class="add" href="add.html">
+                            <img src="/01.UI/img/add.svg.svg" width="30px" alt="">
+                            Add Users
+                        </a>
                 <table>
                     <tbody>
                         <tr>
-                            <td><img src="" alt=""></td>
+                            <td>
+                                <img src="/01.UI/img/Usuario logo.svg" alt="">
+                            </td>
                             <td>User 01</td>
                             <td>
-                                <a href=""><img src="../01.UI/img/lupa.svg" alt=""></a>
-                                <a href=""><img src="/01.UI/img/lapiz.svg" alt=""></a>
-                                <a href=""><img src="/01.UI/img/basura.svg" alt=""></a>
+                                <a href="show.html" class="show">
+                                    <img src="../01.UI/img/lupa.svg" alt="">
+                                </a>
+                                <a href="edit.html" class="edit">
+                                    <img src="/01.UI/img/lapiz.svg" alt="">
+                                </a>
+                                <a href="javascript:;" class="delete">
+                                    <img src="/01.UI/img/basura.svg" alt="">
+                                </a>
+                            </td>
+                        </tr>
+
+                        
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td><img src="/01.UI/img/Usuario logo.svg" alt=""></td>
+                            <td>User 01</td>
+                            <td>
+                                <a href="show.html" class="show">
+                                    <img src="../01.UI/img/lupa.svg" alt="">
+                                </a>
+                                <a href="edit.html" class="edit">
+                                    <img src="/01.UI/img/lapiz.svg" alt="">
+                                </a>
+                                <a href="javascript:;" class="delete">
+                                    <img src="/01.UI/img/basura.svg" alt="">
+                                </a>
+                            </td>
+                        </tr>
+
+                        
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td><img src="/01.UI/img/Usuario logo.svg" alt=""></td>
+                            <td>User 02</td>
+                            <td>
+                                <a href="show.html" class="show">
+                                    <img src="../01.UI/img/lupa.svg" alt="">
+                                </a>
+                                <a href="edit.html" class="edit">
+                                    <img src="/01.UI/img/lapiz.svg" alt="">
+                                </a>
+                                <a href="javascript:;" class="delete">
+                                    <img src="/01.UI/img/basura.svg" alt="">
+                                </a>
+                            </td>
+                        </tr>
+
+                        
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td><img src="/01.UI/img/Usuario logo.svg" alt=""></td>
+                            <td>User 03</td>
+                            <td>
+                                <a href="show.html" class="show">
+                                    <img src="../01.UI/img/lupa.svg" alt="">
+                                </a>
+                                <a href="edit.html" class="edit">
+                                    <img src="/01.UI/img/lapiz.svg" alt="">
+                                </a>
+                                <a href="javascript:;" class="delete">
+                                    <img src="/01.UI/img/basura.svg" alt="">
+                                </a>
+                            </td>
+                        </tr>
+
+                        
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td><img src="/01.UI/img/Usuario logo.svg" alt=""></td>
+                            <td>User 04</td>
+                            <td>
+                                    <a href="show.html" class="show">
+                                        <img src="../01.UI/img/lupa.svg" alt="">
+                                    </a>
+                                    <a href="edit.html" class="edit">
+                                        <img src="/01.UI/img/lapiz.svg" alt="">
+                                    </a>
+                                    <a href="javascript:;" class="delete">
+                                        <img src="/01.UI/img/basura.svg" alt="">
+                                    </a>
                             </td>
                         </tr>
 
@@ -45,5 +137,30 @@
     
         </section>
     </main>
+    <script src="../js/sweetalert2@11.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script >
+        $(document).ready(function(){
+            $('body').on('click', '.delete', function(){Swal.fire({
+                title: "Are you sure?",
+                text: "You won't be able to revert this!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Yes, delete it!"
+                }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire({
+                    title: "Deleted!",
+                    text: "Your file has been deleted.",
+                    icon: "success"
+                    });
+                }
+                });
+                        });
+                    })
+    </script>
+
 </body>
 </html>
