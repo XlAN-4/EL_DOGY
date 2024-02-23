@@ -1,4 +1,14 @@
+:root {
+    --color-pri: #F26A8D;
+    --color-sec: #1f7a8c;
+    --color-trd: #bfdbf7;
+    --color-frd: #e1e5f2;
+    --font-main: Poppins, sans-serif;
+}
+
+
 @import url('https://fonts.googleapis.com/css2? family= Irish+Grover & display=swap');
+
 body{
    
 background-color: #F26A8D;;
@@ -55,7 +65,6 @@ section.layout {
 a:is(:hover){
 border: 2px solid;
 }
-}
 
 /*Login*/
 
@@ -76,7 +85,7 @@ section.login{
             background-color: #8AC926;
             color: #000000;
             border-radius: 50px 0 0 50px;
-            border: 2px solid #000;
+           
         }
         a:last-child{
             background-color: #d9d9d9;
@@ -267,15 +276,11 @@ section.Register{
     }
 
 
-
-
-    /*dashboard*/
-
 header.nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #000000;
+   
     width: 447px;
 }
 
@@ -285,6 +290,10 @@ header.nav,level-0{
         pointer-events: none;
     }
 }
+
+
+  /*dashboard*/
+
     section.dashboard{
         h1{
             font-size: 30px;
@@ -330,12 +339,12 @@ header.nav,level-0{
 
 
      /*module users*/
-
+    
      section.Module{
         h1{
-            display: flex;
-            font-size: 30px;
-            color: #000;
+          
+            font-size: 50px;
+            color: #000000;
             text-align: center;
             text-transform: uppercase;
             margin: 2.4rem 0;
@@ -348,6 +357,7 @@ header.nav,level-0{
                     display: flex;
                     flex-direction: column;
                     gap: 0.6rem;
+                    margin: 2.4rem;
                         tr{
                             background-color: #d9d9d9;
                             border-radius: 20px;
@@ -422,7 +432,6 @@ a.add:is(:link, :visited){
             &:hover{
                 transform:scale(1.05);
             }
-        }
 
         input#photo{
             display: none;
@@ -440,6 +449,7 @@ a.add:is(:link, :visited){
             img.photo{
                 border-radius: 200px;
                 border: 2px solid #000;
+                width: 100px;
             }
             div.Info{
                 display: grid;
@@ -448,7 +458,7 @@ a.add:is(:link, :visited){
                 row-gap: 1rem;
                 margin-top: 1rem;
 
-            }
+            
             p{
                 font-size: 18px;
                 border-radius: 20px;
@@ -457,5 +467,65 @@ a.add:is(:link, :visited){
                 width: 200px;
             }
         }
+        }
+    }
+    }
 
-     }
+
+     /*pets*/
+
+     div.pets{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+
+        article{
+            border-radius: 20px;
+            background-color: #ffffff;
+            padding: 10px;
+            width: 150px;
+            header{
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                justify-content: center;
+                img{
+                    margin-top: 0;
+                    width: 80px;
+                }
+                p{
+                    display: flex;
+                    flex-direction: column;
+                    span:last-child {
+                        font-weight: 300;
+                        font-size: 14px;
+                    }
+                }
+            }
+            footer{display: flex;
+                justify-content: center;
+                margin-top: 1rem;
+                a:is(:link, :visited){
+                    background-color: #fc0000;
+                    border-radius: 20px;
+                    color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    text-decoration: none;
+                    width: 120px;
+                    padding: 4px;
+                }
+                a:is(:hover){
+                    transform:scale(1.1);
+                }
+            }
+
+
+        }
+        article :nth-child(3n){
+            background-color: #434343;
+        }
+
+     } 
+}
+    
